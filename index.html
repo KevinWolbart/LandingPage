@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #title {
+                display: inline-block;
+            }
+            #header-img {
+                height: 50px;
+                width: auto;
+                padding-top: .5em;
+            }
+            #header {
+                width: auto;
+                height: 200px;
+                background-color: white;
+            }
+            #nav-bar {
+                position: fixed;
+                top: 0px;
+                left: 0px;
+                width: 100%;
+                background-color: white;
+                display: flex;
+                flex-direction: row;
+            }
+            #drink-intro {
+                background-color: white;
+                display: flex;
+                flex-direction: row;
+                margin: 2em 5em 5em 5em;
+            }
+            #video {
+                width: 50%;
+                height: 50%;
+                border-color: white;
+                border-width: 8px;
+                border-style: solid;
+            }
+            #drink-intro-text {
+                text-align: center;
+                width: 50%;
+                height: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+            }
+            #drink-info {
+                background-color: white;
+                display: flex;
+                flex-direction: row;
+                margin: 5em;
+                height: 600px;
+            }
+            #coconut-img {
+                display: block;
+                width: auto;
+                height: 100%;
+                margin: 0em 2em 2em 2em;
+            }
+            .info-tab{
+                background-color: rgb(238, 237, 237);
+                border-radius: 20px;
+                padding: 5px;
+                margin: 5px;
+                margin-top: 20px;
+            }
+            .info-tab:hover {
+                transform: scale(1.03);
+            }
+            .info-header {
+                margin-bottom: 0px;
+            }
+            .info-description {
+                margin-top: 0px;
+            }
+            .flavors {
+                background-color: rgb(238, 237, 237);
+                border-radius: 20px;
+            }
+            #coconut-flavor:hover {
+                background-color: slategray;
+                transform: scale(1.03);
+            }
+            #peach-flavor:hover {
+                background-color: maroon;
+                transform: scale(1.03);
+            }
+            #tropical-flavor:hover {
+                background-color: yellow;
+                transform: scale(1.03);
+            }
+            #blueberry-flavor:hover {
+                background-color: blue;
+                transform: scale(1.03);
+            }
+            #kiwi-flavor:hover {
+                background-color: limegreen;
+                transform: scale(1.03);
+            }
+            #tangerine-flavor:hover {
+                background-color: orange;
+                transform: scale(1.03);
+            }
+            #pear-flavor:hover {
+                background-color: darkgreen;
+                transform: scale(1.03);
+            }
+            #cranberry-flavor:hover {
+                background-color: darkred;
+                transform: scale(1.03);
+            }
+            #nav-bars {
+                width: 90%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                text-align: center;
+            }
+            @media (max-width: 100px) {
+                h2 {
+                    background-color: darkgrey;
+                }
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <main>
+            <header id="header">
+                <nav id="nav-bar">
+                    <img id="header-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5TbYixNHdtX88ixAUX66Ak_UCtCvqTQ9nbIGsXX5mpg0GiXMWJg&s" alt="Red bull logo">
+                    <div id="nav-bars">
+                        <h2><a class="nav-link" href="#drink-intro">Intro</a></h2>
+                        <h2><a class="nav-link" href="#drink-info">Info</a></h2>
+                        <h2><a class="nav-link" href="#form">Email</a></h2>
+                    </div>
+                </nav>
+                
+            </header>
+            <div id="drink-intro">
+                <div id="drink-intro-text">
+                    <h2 class="flavors" id="coconut-flavor">Coconut Berry</h2>
+                    <h2 class="flavors" id="peach-flavor">Peach-Nectarine</h2>
+                    <h2 class="flavors" id="tropical-flavor">Tropical</h2>
+                    <h2 class="flavors" id="blueberry-flavor">Blueberry</h2>
+                    <h2 class="flavors" id="kiwi-flavor">Kiwi Apple</h2>
+                    <h2 class="flavors" id="tangerine-flavor">Tangerine</h2>
+                    <h2 class="flavors" id="pear-flavor">Crisp Pear</h2>
+                    <h2 class="flavors" id="cranberry-flavor">Cranberry</h2>
+                </div>
+                <video id="video" preload="auto" controls loop>
+                    <source src="https://videos.ctfassets.net/lcr8qbvxj7mh/2eRmPXtIMjTnMsdHkCc034/068f5d97282841ec043ae35adcffe2dd/Recycling_Chess_Zebra_UFO_690x690_crf25.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div id="drink-info">
+                <img id="coconut-img"src="https://images.ctfassets.net/lcr8qbvxj7mh/5RaMzKdtScB6rqSDfsuN7c/80fb1dfde6b9d658fc4424d5fd3904c3/US_RBCE_250_Single_Unit_close_ambient_ORIGINAL_DRES.png?w=420&q=90&fm=png" alt="White Red Bull can">
+                <div id="coconut-info">
+                    <div class="info-tab">
+                        <h2 class="info-header">Caffeine</h2>
+                        <p class="info-description">Caffeine was widely used by ancient civilizations. 
+                            It was traditionally consumed from natural sources 
+                            like tea, coffee, cacao beans and cola nuts and 
+                            appreciated for its stimulating effects on the human body.
+                        </p>
+                    </div>
+                    <div class="info-tab">
+                        <h2 class="info-header">B-Group Vitamins</h2>
+                        <p>Vitamins are essential micronutrients that are required for 
+                            maintaining normal body functions.
+                        </p>
+                    </div>
+                    <div class="info-tab">
+                        <h2 class="info-header">Sugars</h2>
+                        <p>Red Bull Energy Drink is made with real sugars.</p>
+                    </div>
+                    <div class="info-tab">
+                        <h2 class="info-header">Taurine</h2>
+                        <p>Taurine is an amino acid, naturally occurring in the 
+                            human body and present in the daily diet. It is involved 
+                            in a wide range of biological processes. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <form id="form" action="https://www.freecodecamp.com/email-submit" target="_blank">
+                <label id="email-label" for="email">Email:</label>
+                <input type="email" id="email" name="email" class="header-input" placeholder="Enter email here" required>
+                <input type="submit" id="submit">
+            </form>
+        </main>
+    </body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
